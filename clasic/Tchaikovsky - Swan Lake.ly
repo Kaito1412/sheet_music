@@ -2,8 +2,10 @@
 
 \header {
   title = "Swap Lake"
+  subtitle = " "
+  subsubtitle = " "
   composer = "P. I. Tchaikovsky"
-  arranger = "Kaito Mateu"
+  arranger = "Arranged by Kaito Mateu"
 }
 
 upper = \relative c' {
@@ -16,17 +18,17 @@ upper = \relative c' {
   \relative c'' { a2\mp } d8 e f g 
   a4. f8 a4. f8
   a4. \relative c' { d8 } f d bes \relative c' { f }
-  d2~ d8 \relative c'' { g f e }
+  d2~ d8 \relative c'' { g f e } \break
   \relative c'' { a2 } d8 e f g 
   % 6
   a4. f8 a4. f8
   a4. \relative c' { bes8 } f d bes \relative c' { f }
-  d2. \bar "|." d4
+  d2. \bar "|." \break d4
   e f g a8 bes
   \relative c'' { c4. bes8 a4  bes8 c8 
   % 11
     d4. c8 bes4 c8 d 
-    e4. d8 a } f e d 
+    e4. d8 a } f e d \break
   e4 f g a8 bes
   c4. bes8 a4 b8 c
   d4. c8 bes4 c8 d
@@ -44,17 +46,17 @@ lower = \relative c' {
   < a f d >2 r2
   r4 < a f d > r < a f d > 
   r < f d > aes g
-  d \relative c' { < a f > < a f > r
+  d \relative c' { < a f > < a f > r \break
     < a f d >2 r2
   % 6
     r4 < a f d > r < a f d > 
     r < f d > aes g
-    d \relative { < a f > < a f > \bar "|." r
+    d \relative { < a f > < a f > \bar "|." \break r
       c2 bes
       a1
   % 11
       < bes g >
-      < b gis >2 < cis a >2
+      < b gis >2 < cis a >2 \break
       c bes
       a1
       < bes g >
@@ -75,3 +77,6 @@ lower = \relative c' {
   \midi { }
 }
 
+\paper {
+  top-margin = 3\cm
+}
